@@ -1,0 +1,42 @@
+<nav class="navbar navbar-dark bg-dark">
+   <div class="container-fluid">
+      <!-- Company Name -->
+      <li><a class="navbar-brand" routerLink = "/home">Shopping Site</a></li>
+      <!-- Dropdown -->
+      <li class="dropdown">
+         <a href="javascript:void(0)" class="dropbtn">Men</a>
+         <div class="dropdown-content">
+         <a href="#">Topwear</a>
+         <a href="#">Bottomwear</a>
+         <a href="#">Footwear</a>
+         </div>
+      </li>
+      <li class="dropdown">
+         <a href="javascript:void(0)" class="dropbtn">Women</a>
+         <div class="dropdown-content">
+         <a href="#">Indian Wear</a>
+         <a href="#">Western Wear</a>
+         <a href="#">Footwear</a>
+         </div>
+      </li>
+      <li class="dropdown">
+         <a href="javascript:void(0)" class="dropbtn">Kids</a>
+         <div class="dropdown-content">
+         <a href="#">Boys Wear</a>
+         <a href="#">Girls Wear</a>
+         <a href="#">Footwear</a>
+         </div>
+      </li>
+      <!-- Route to Login page -->
+      <li><a routerLink = "/login">Login</a></li>
+      <!-- Route to Registration Page-->
+      <li><a routerLink = "/registration">Registration</a></li>
+      <!-- Search Bar -->
+     <form class="d-flex">
+       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn text-secondary" type="submit">Search</button>
+     </form>
+   </div>
+ </nav>
+ 
+<router-outlet></router-outlet>
